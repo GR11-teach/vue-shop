@@ -1,29 +1,29 @@
 {
-  "name": "vue_shop",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
-  },
-  "dependencies": {
-    "axios": "^0.21.1",
-    "babel-plugin-component": "^1.1.1",
-    "core-js": "^3.6.5",
-    "css-loader": "^5.2.6",
-    "element-ui": "^2.4.5",
-    "file-loader": "^6.2.0",
-    "less": "^3.9.0",
-    "less-loader": "^4.1.0",
-    "style-loader": "^2.0.0",
-    "vue": "^2.6.11",
-    "vue-cli-plugin-element": "^1.0.1",
-    "vue-router": "^3.5.1",
-    "vuex": "^3.6.2"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.5.0",
-    "@vue/cli-service": "^4.5.0",
-    "vue-template-compiler": "^2.6.11"
-  }
+    "name": "vue_shop",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build"
+    },
+    "dependencies": {
+        "axios": "^0.21.1",
+        "babel-plugin-component": "^1.1.1",
+        "core-js": "^3.6.5",
+        "css-loader": "^5.2.6",
+        "element-ui": "^2.4.5",
+        "file-loader": "^6.2.0",
+        "less": "^3.9.0",
+        "less-loader": "^4.1.0",
+        "style-loader": "^2.0.0",
+        "vue": "^2.6.11",
+        "vue-cli-plugin-element": "^1.0.1",
+        "vue-router": "^3.5.1",
+        "vuex": "^3.6.2"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "^4.5.0",
+        "@vue/cli-service": "^4.5.0",
+        "vue-template-compiler": "^2.6.11"
+    }
 }

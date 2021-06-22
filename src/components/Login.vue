@@ -78,6 +78,7 @@ export default {
         const { data: res } = await this.$http.post("login", this.loginForm);
         //通过res.meta.status状态码判断请求
         console.log(res);
+
         if (res.meta.status !== 200) {
           return this.$message.error("登陆失败！");
         }
@@ -99,6 +100,7 @@ export default {
   background-color: #2b4b6b;
   height: 100%;
 }
+
 .login_box {
   position: absolute;
   top: 0;
@@ -110,6 +112,7 @@ export default {
   height: 300px;
   background-color: white;
   border-radius: 5px;
+
   .login_head {
     position: absolute;
     left: 50%;
@@ -136,6 +139,7 @@ export default {
   padding: 0 20px;
   box-sizing: border-box;
 }
+
 .btns {
   display: flex;
   justify-content: flex-end;

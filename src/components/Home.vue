@@ -95,6 +95,7 @@ export default {
 .home_container {
   height: 100%;
 }
+
 .el-header {
   background-color: #363d40;
   display: flex;
@@ -114,6 +115,7 @@ export default {
     }
   }
 }
+
 .el-aside {
   background-color: #313743;
   .iconfont {
@@ -123,9 +125,11 @@ export default {
     border-right: none;
   }
 }
+
 .el-main {
   background-color: #eaedf1;
 }
+
 .toggle-button {
   color: white;
   font-size: 12px;
