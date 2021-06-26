@@ -31,7 +31,8 @@ import {
     Col,
     MessageBox,
     Tag,
-    Tree
+    Tree,
+    Cascader
 } from 'element-ui'
 
 Vue.use(Button)
@@ -63,6 +64,7 @@ Vue.use(Col)
 Vue.use(MessageBox)
 Vue.use(Tag)
 Vue.use(Tree)
+Vue.use(Cascader)
 
 
 

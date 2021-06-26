@@ -77,7 +77,7 @@ export default {
         //使用对象解构 并起别名，此时获得的data数据干净
         const { data: res } = await this.$http.post("login", this.loginForm);
         //通过res.meta.status状态码判断请求
-        console.log(res);
+        // console.log(res);
 
         if (res.meta.status !== 200) {
           return this.$message.error("登陆失败！");

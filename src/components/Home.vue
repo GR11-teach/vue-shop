@@ -76,7 +76,7 @@ export default {
     async getMunuList() {
       //发送请求
       const { data: res } = await this.$http.get("menus");
-      console.log(res);
+      // console.log(res);
       if (res.meta.status !== 200) return this.$messgae.error(res.meta.msg);
       this.menuList = res.data;
     },
