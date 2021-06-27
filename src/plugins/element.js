@@ -32,7 +32,9 @@ import {
     MessageBox,
     Tag,
     Tree,
-    Cascader
+    Cascader,
+    Tabs,
+    TabPane
 } from 'element-ui'
 
 Vue.use(Button)
@@ -65,7 +67,8 @@ Vue.use(MessageBox)
 Vue.use(Tag)
 Vue.use(Tree)
 Vue.use(Cascader)
-
+Vue.use(Tabs)
+Vue.use(TabPane)
 
 
 Vue.prototype.$message = Message
