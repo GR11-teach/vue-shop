@@ -275,7 +275,7 @@ export default {
         return this.$message.error("获取商品分类失败！");
       }
       this.catelist = res.data;
-      console.log(this.catelist);
+      // console.log(this.catelist);
     },
     // 监听联级选择器的改变
     handleChange() {
@@ -323,8 +323,8 @@ export default {
         this.onlyTableData = res.data;
       }
       
-      console.log("输出渲染表格数据");
-      console.log(res);
+      // console.log("输出渲染表格数据");
+      // console.log(res);
     },
     // 点击添加参数按钮，开始添加参数
     showAddDialog() {
@@ -344,7 +344,7 @@ export default {
             attr_sel: this.activeName,
           }
         );
-        console.log(res);
+        // console.log(res);
       });
       this.addParamDialogVisible = false;
       this.getParamsData();
@@ -404,15 +404,15 @@ export default {
     async showDeleteDialog(p) {
       // 取消的确认操作首先在导入elementui的messagebox，其次将$confirm挂载到vue原型上
       // 返回值是promise，用户确认删除返回的是字符串confirm，如果取消删除会报错所以增加.catch捕获错误
-      const confirmResult = await this.$confirm(
-        "此操作将永久删除该参数, 是否继续?",
-        "提示",
+        const confirmResult = await this.$confirm(
+        '此操作将永久删除该参数, 是否继续?',
+        '提示',
         {
-          confirmButtonText: "确定",
-          cancelButtonText: "取消",
-          type: "warning",
+          confirmButtonText: '确定',
+          cancelButtonText: '取消',
+          type: 'warning'
         }
-      ).catch((err) => err);
+      ).catch(err => err)
       if (confirmResult === "confirm") {
         const { data: res } = await this.$http.delete(
           `categories/${
