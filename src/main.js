@@ -18,8 +18,8 @@ import './assets/fonts/iconfont.css'
 
 import axios from 'axios'
 
-// axios.defaults.baseURL = 'http://118.31.171.210:8801/api/private/v1/'
-axios.defaults.baseURL = `http://127.0.0.1:8888/api/private/v1/`
+axios.defaults.baseURL = 'http://118.31.171.210:8801/api/private/v1/'
+    // axios.defaults.baseURL = `http://127.0.0.1:8888/api/private/v1/`
 
 // 每一次网络请求都会为每一个请求都挂载一个Authorization字段，字段的值就是token
 axios.interceptors.request.use(config => {

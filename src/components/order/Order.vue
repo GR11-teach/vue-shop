@@ -11,8 +11,8 @@
       <!-- 搜索框区域 -->
       <el-row>
         <el-col :span="8">
-          <el-input placeholder="请输入内容" clearable>
-            <el-button slot="append" icon="el-icon-search"></el-button>
+          <el-input placeholder="请输入内容" clearable v-model="sousuo">
+            <el-button slot="append" icon="el-icon-search" @click="sousuos"></el-button>
           </el-input>
         </el-col>
       </el-row>
@@ -115,12 +115,16 @@ export default {
       },
       progressDialogVisible: false,
       progressList: [],
+      sousuo:'',
     };
   },
   created() {
       this.getOrderList();
   },
   methods: {
+    sousuos(){
+      this.sousuo='';
+    },
       async getOrderList(){
           const{data:res} = await this.$http.get('/orders',{
               params:this.queryInfo
